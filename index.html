@@ -13,13 +13,16 @@
   <body>
     <div class="game container-fluid">
       <header class="row h-25 bg-dark text-light text-center">
-        <h1 class="col-12">Rock, Paper, Scissors</h1>
+        <h1 class="col-12 align-self-center">Rock, Paper, Scissors</h1>
       </header>
-      <main class="row">
-        <div class="col-12 d-flex justify-content-center align-items-center">
-          <button id="rock" class="btn btn-lg btn-primary">Rock</button>
-          <button id="paper" class="btn btn-lg btn-primary">Paper</button>
-          <button id="scissors" class="btn btn-lg btn-primary">Scissors</button>
+      <main class="row bg-secondary h-75">
+        <div class="col-12 p-5 d-flex justify-content-around align-items-center">
+          <button id="" class="btn btn-lg btn-primary" onclick="play('rock')">Rock</button>
+          <button id="paper" class="btn btn-lg btn-primary" onclick="play('paper')">Paper</button>
+          <button id="scissors" class="btn btn-lg btn-primary" onclick="play('scissors')">Scissors</button>
+        </div>
+          <div class="col-12 text-light d-flex justify-content-center">
+            <h3 id="result">Winner</h3>
         </div>
       </main>
     </div>
