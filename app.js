@@ -1,9 +1,12 @@
 let compChoice 
 let resultElem = document.querySelector("#result")
 let choices = ["rock", "paper", "scissors"]
+let compChoiceElem = document.querySelector("#compChoiceText")
 
 function play(playerChoice) {
-compChoice = Math.floor( Math.random() *3 )
+compChoice = choices[Math.floor( Math.random() *3 )]
+console.log(playerChoice, compChoice)
+compChoiceElem.textContent = compChoice
   switch (playerChoice) {
     case "rock":
       rock()
